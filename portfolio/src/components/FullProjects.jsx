@@ -71,7 +71,7 @@ function FullProjects() {
                 {projectData.map((project) => (
                     <div
                         key={project.id}
-                        className="px-4 pb-4 pt-4 my-2 mb-9 hover:shadow-cyan-600 shadow-lg bg-zinc-800 rounded-xl transition duration-500"
+                        className="px-4 pb-4 pt-4 my-2 mb-9 hover:shadow-cyan-600 shadow-lg bg-zinc-800 rounded-xl transition duration-500 hover:scale-[105%]"
                     >
                         <div className="text-white">
                             <img
@@ -95,6 +95,16 @@ function FullProjects() {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="flex justify-center sm:justify-end pr-0 sm:pr-24 py-10 sm:py-14">
+                <Link to="/">
+                    <button 
+                        className="text-lg sm:text-xl border-2 px-4 py-2 rounded-xl text-white hover:border-cyan-400 hover:text-cyan-400 transition duration-300 hover:scale-[105%]" 
+                        style={{ boxShadow: "1px 1px 5px #00ffff", textShadow: "1px 1px 3px #00ffff" }}
+                    >
+                        Back to home
+                    </button>
+                </Link>
             </div>
         </div>
     )

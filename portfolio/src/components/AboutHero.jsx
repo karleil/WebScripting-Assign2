@@ -33,8 +33,9 @@ export default function AboutHero() {
                         and helps me bring a fresh perspective to every project I take on.
                     </p>
                     <div className="flex justify-center">
+                        <a href="https://drive.google.com/file/d/1uXwKTvAY0WUU8W1MUsx2fKpMD74xkI2f/view?usp=sharing" target="_blank">
                         <button
-                            className="border-2 border-white hover:border-cyan-400 px-4 py-2 mt-8 rounded-xl text-sm md:text-xl hover:text-cyan-300 transition duration-500"
+                            className="border-2 border-white hover:border-cyan-400 px-4 py-2 mt-8 rounded-xl text-sm md:text-xl hover:text-cyan-300 transition duration-500 hover:scale-[105%]"
                             style={{
                                 boxShadow: "1px 1px 5px #00ffff",
                                 textShadow: "1px 2px 5px #00ffff",
@@ -42,6 +43,7 @@ export default function AboutHero() {
                         >
                             View my Resume
                         </button>
+                        </a>
                     </div>
                 </div>
                 <div className="flex justify-center md:justify-end">

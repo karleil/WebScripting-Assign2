@@ -32,14 +32,14 @@ function Projects() {
         <div className="bg-gradient-to-b from-neutral-900 to-neutral-800 pb-5 p-5 sm:p-10 lg:pt-24">
             <div>
                 <h1 
-                    className="font-bold text-4xl sm:text-6xl text-center text-white mb-10 sm:mb-20 mt-5" 
+                    className="font-bold text-4xl sm:text-6xl text-center text-white mb-10 sm:mb-20 mt-5 " 
                     style={{ textShadow: "1px 2px 5px #00ffff" }}
                 >
                     PROJECTS
                 </h1>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-5 mx-5 sm:mx-12">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-5 mx-5 sm:mx-12">
     {projectData.map((project) => (
         <Link
             key={project.id}
@@ -54,7 +54,7 @@ function Projects() {
             }
         >
         
-        <div className="px-5 pb-5 pt-4 mb-3 hover:shadow-cyan-600 shadow-lg bg-zinc-800 rounded-xl transition duration-500">
+        <div className="px-5 pb-5 pt-4 mb-3 hover:shadow-cyan-600 shadow-lg bg-zinc-800 rounded-xl transition duration-500 hover:scale-[103%]">
             <img
                 src={project.img}
                 alt={project.title}
@@ -83,7 +83,7 @@ function Projects() {
             <div className="flex justify-center sm:justify-end pr-0 sm:pr-24 py-10 sm:py-14">
                 <Link to="/projects">
                     <button 
-                        className="text-lg sm:text-xl border-2 px-4 py-2 rounded-xl text-white hover:border-cyan-400 hover:text-cyan-400 transition duration-300" 
+                        className="text-lg sm:text-xl border-2 px-4 py-2 rounded-xl text-white hover:border-cyan-400 hover:text-cyan-400 transition duration-300 hover:scale-[105%]" 
                         style={{ boxShadow: "1px 1px 5px #00ffff", textShadow: "1px 1px 3px #00ffff" }}
                     >
                         View more projects

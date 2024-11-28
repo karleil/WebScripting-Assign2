@@ -1,9 +1,15 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
+import BdayCounter from "./BdayCounter";
 
 function Intro() {
     return (
+        
         <div className="bg-neutral-850 pb-2 lg:pb-10">
+            <div className="App">
+      <BdayCounter />
+             </div>
             <h1 
                 className="font-bold text-4xl md:text-4xl lg:text-6xl text-center text-white py-4 md:py-8 lg:pt-10 lg:pb-16" 
                 style={{ textShadow: "1px 2px 5px #00ffff" }}
@@ -30,17 +36,19 @@ function Intro() {
                     <div className="flex justify-center lg:justify-start gap-4 text-xs pt-3 lg:pt-0 sm:text-sm lg:text-lg">
                         <Link to="/about">
                             <button 
-                                className="bg-cyan-400 px-4 py-1.5 rounded-2xl text-cyan-950 font-semibold shadow-md shadow-cyan-700 hover:bg-cyan-700 hover:text-white transition duration-300"
+                                className="bg-cyan-400 px-4 py-1.5 rounded-2xl text-cyan-950 font-semibold shadow-md shadow-cyan-700 hover:bg-cyan-700 hover:text-white transition duration-200 hover:scale-[105%]"
                             >
                                 More about me
                             </button>
                         </Link>
+                        <a href="https://drive.google.com/file/d/1uXwKTvAY0WUU8W1MUsx2fKpMD74xkI2f/view?usp=sharing" target="_blank">
                         <button 
-                            className="border-2 border-white hover:text-cyan-400 hover:border-cyan-400 px-4 py-1 rounded-2xl transition duration-300" 
+                            className="border-2 border-white hover:text-cyan-400 hover:border-cyan-400 px-4 py-1 rounded-2xl transition duration-300 hover:scale-[105%]" 
                             style={{ boxShadow: "1px 1px 5px #00ffff", textShadow: "1px 2px 5px #00ffff" }}
                         >
                             Download CV
                         </button>
+                        </a>
                     </div>
                 </div>
             </div>

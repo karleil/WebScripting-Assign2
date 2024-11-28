@@ -1,0 +1,59 @@
+/* General styles for the burger menu */
+.bm-menu {
+  background: #171717; /* Dark background */
+  padding: 1.5rem; /* Add padding for spacing */
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align links to the left */
+}
+
+.bm-item-list a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.bm-item-list a:hover {
+  color: #00e1ff;
+}
+
+/* Style for the burger menu button */
+.bm-burger-button {
+  position: relative;
+  width: 20px;
+  height: 10px;
+}
+
+/* Burger bars */
+.bm-burger-bars {
+  background: #ffffff;
+}
+
+/* Ensure desktop navbar alignment */
+nav {
+  flex: 1; /* Allow the nav to stretch and align with flexbox */
+}
+
+nav ul {
+  justify-content: flex-end; /* Push links to the right */
+}
+
+/* Only show hamburger menu button on smaller screens */
+.bm-burger-button {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .bm-burger-button {
+    display: none; /* Hide hamburger on larger screens */
+  }
+}
+
+/* Hide the desktop nav on mobile screens */
+@media (max-width: 767px) {
+  nav.md\\:flex {
+    display: none;
+  }
+}
