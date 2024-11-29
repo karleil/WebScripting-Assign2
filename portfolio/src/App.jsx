@@ -4,7 +4,6 @@ import Layout from "./components/Layout";
 import AboutScreen from "./screens/AboutScreen";
 import HomeScreen from "./screens/HomeScreen";
 import ProjectsScreen from "./screens/ProjectsScreen";
-import { slide as Menu } from 'react-burger-menu'
 
 
 function App() {

@@ -25,9 +25,13 @@ const BdayCounter = () => {
         setTimeRem(`${days}d ${hours}h ${minutes}m ${seconds}s`);
       };
   
-  
+      //this updates the timer every second
+      const interval = setInterval(updateTimer, 1000);
+
+    // Clean up interval on component unmount
+    return () => clearInterval(interval);
+    }, []); // Effect runs only once, when the component mounts.
      
-});
   
     return (
       <div className="text-center py-2 md:py-5 bg-neutral-800"> 
@@ -38,3 +42,5 @@ const BdayCounter = () => {
   };
 
   export default BdayCounter
+
+

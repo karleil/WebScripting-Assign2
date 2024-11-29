@@ -1,4 +1,7 @@
 import React from "react";
+import AOS from 'aos'
+AOS.init();
+
 
 export default function Values() {
     return (
@@ -9,7 +12,7 @@ export default function Values() {
             >
                 MY VALUES
             </h1>
-            <div className="text-white grid grid-cols-1 md:grid-cols-3 gap-12 w-full mx-auto">
+            <div data-aos="fade-up"  className="text-white grid grid-cols-1 md:grid-cols-3 gap-12 w-full mx-auto">
                 <div className="px-6 md:px-10 text-center">
                     <img
                         src="./values/commitment.png"

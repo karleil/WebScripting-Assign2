@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from 'aos'
+AOS.init();
 
 
 export default function Toolkit() {
@@ -53,7 +55,7 @@ export default function Toolkit() {
     ]
     
     return (
-      <div className="pt-16 pb-12">
+      <div  className="pt-16 pb-12">
           <h1
               className="text-center font-bold text-4xl md:text-5xl text-white pb-12"
               style={{ textShadow: "1px 2px 5px #00ffff" }}
@@ -64,7 +66,7 @@ export default function Toolkit() {
               {toolkitData.map((toolkit) => (
                   <div
                       key={toolkit.id}
-                      className="flex flex-col items-center text-white"
+                      className="flex flex-col items-center text-white" data-aos="fade-up"
                   >
                       <img
                           src={toolkit.img}

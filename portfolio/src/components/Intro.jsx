@@ -1,14 +1,15 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import BdayCounter from "./BdayCounter";
+import AOS from 'aos'
+AOS.init();
 
 function Intro() {
     return (
         
         <div className="bg-neutral-850 pb-2 lg:pb-10">
-            <div className="App">
-      <BdayCounter />
+            <div  className="">
+                <BdayCounter />
              </div>
             <h1 
                 className="font-bold text-4xl md:text-4xl lg:text-6xl text-center text-white py-4 md:py-8 lg:pt-10 lg:pb-16" 
@@ -20,13 +21,14 @@ function Intro() {
             <div className="grid grid-cols-1 sm:grid-cols-2 text-white text-xl m-auto lg:mx-52 mt-5 px-4 sm:px-0">
                 {/* Image */}
                 <img 
+                    data-aos="fade-right"
                     className="w-24 sm:w-32 md:w-56 lg:w-80 m-auto rounded-2xl" 
                     src="/leil.png" 
                     alt="" 
                 />
                 
                 {/* Text Content */}
-                <div className="sm:mr-7 mt-5 sm:mt-0">
+                <div data-aos="fade-left" className="sm:mr-7 mt-5 sm:mt-0">
                     <p className="text-xs sm:text-sm lg:text-xl mx-2 lg:mx-0 sm:mt-5 lg:mt-14 mb-3 sm:mb-14 lg:mb-14" >
                         Hi, I'm Karleil Villareal. My passion lies in creating user-centered designs that are not only visually engaging but also intuitive and accessible. I enjoy turning complex challenges into simple solutions, focusing on both aesthetics and functionality. <br/><br/> 
                         Currently a student, I am constantly expanding my skills and exploring new design trends, eager to apply my knowledge to real-world projects.

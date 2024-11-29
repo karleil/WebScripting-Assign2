@@ -12,7 +12,7 @@ function Banner() {
             opacity-[30%]" autoPlay loop muted>
                 <source src="/bannerVid.mp4" type="video/mp4" />
             </video>
-            <div className="absolute inset-0 flex flex-col pt-4 md:pt-16 lg:pt-80 lg:pl-14 m-12 ">
+            <div className="absolute inset-0 flex flex-col pt-4 md:pt-16 lg:pt-[17%] lg:pl-14 m-12 ">
                 <p className="text-white lg:ml-64 lg:text-2xl font-semibold md:ml-8 md:text-sm text-[60%] ml-7">
                     Hello, I'm a <span className="font-bold" style={{ color: "#00ffff" }}>Multidisciplinary Designer</span> based in Vancouver.
                 </p>

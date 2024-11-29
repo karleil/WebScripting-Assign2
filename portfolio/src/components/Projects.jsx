@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
 import React from "react";
 import { Link } from 'react-router-dom';
+import AOS from 'aos'
+AOS.init();
 
 function Projects() {
 
@@ -39,7 +40,7 @@ function Projects() {
                 </h1>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-5 mx-5 sm:mx-12">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-5 mx-5 sm:mx-12" data-aos="fade-down">
     {projectData.map((project) => (
         <Link
             key={project.id}
