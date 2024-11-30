@@ -1,10 +1,10 @@
-import React, {useEffect} from "react";
-import FullProjects from "../components/FullProjects";
-
+import React, {useEffect} from "react"; //imports useEffect hook from React
+import FullProjects from "../components/FullProjects"; // imports FullProjects component so we render it.
 
 
 function ProjectsScreen() {
-
+    
+    // Same explanation as AboutScreen
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -12,7 +12,7 @@ function ProjectsScreen() {
 
     return(
         <>
-            <FullProjects/>
+            <FullProjects/> 
         </>
     )
 }

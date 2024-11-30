@@ -1,25 +1,19 @@
 import React from "react";
+import AOS from 'aos' //imports the AOS library we installed and lets us use it.
+AOS.init(); //Runs the library we imported 
 
+
+//Nothing much here just an image and text CSS
 export default function AboutHero() {
     return (
-        <div
-            className="bg-neutral-800 pt-20 pb-20"
-            style={{
-                backgroundImage: "url('/banner_about.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-            }}
-        >
+        <div data-aos="zoom-out" //the code for the AOS animation.
+        className="bg-neutral-800 pt-20 pb-20" style={{ backgroundImage: "url('/banner_about.png')", backgroundSize: "cover", backgroundPosition: "center",}}>
+            
             <div className="pb-10 grid grid-cols-1 md:grid-cols-2 md:px-44 pt-10 m-auto text-white w-[90%] md:w-[85%]">
                 <div className="py-5 ">
-                    <h1
-                        className="text-5xl md:text-7xl font-bold pb-5"
-                        style={{ textShadow: "1px 2px 5px #00ffff" }}
-                    >
-                        ABOUT ME <br />
-                    </h1>
+                    <h1 className="text-5xl md:text-7xl font-bold pb-5" style={{ textShadow: "1px 2px 5px #00ffff" }}>ABOUT ME <br /></h1>
                     <p className="text-sm md:text-lg">
-                        Hello,{" "}
+                        Hello,
                         <span className="text-cyan-300">I'm Karleil Villareal,</span> but you
                         can call me <span className="text-cyan-300">Leil</span>. I was born and
                         raised in the Philippines, and I'm currently taking the New Media Design
@@ -34,24 +28,11 @@ export default function AboutHero() {
                     </p>
                     <div className="flex justify-center">
                         <a href="https://drive.google.com/file/d/1uXwKTvAY0WUU8W1MUsx2fKpMD74xkI2f/view?usp=sharing" target="_blank">
-                        <button
-                            className="border-2 border-white hover:border-cyan-400 px-4 py-2 mt-8 rounded-xl text-sm md:text-xl hover:text-cyan-300 transition duration-500 hover:scale-[105%]"
-                            style={{
-                                boxShadow: "1px 1px 5px #00ffff",
-                                textShadow: "1px 2px 5px #00ffff",
-                            }}
-                        >
-                            View my Resume
-                        </button>
-                        </a>
+                        <button className="border-2 border-white hover:border-cyan-400 px-4 py-2 mt-8 rounded-xl text-sm md:text-xl hover:text-cyan-300 transition duration-500 hover:scale-[105%]"style={{boxShadow: "1px 1px 5px #00ffff", textShadow: "1px 2px 5px #00ffff",}}>View my Resume</button></a>
                     </div>
                 </div>
                 <div className="flex justify-center md:justify-end">
-                    <img
-                        className="w-60 md:w-96 rounded-2xl"
-                        src="/about1.png"
-                        alt="about page photo"
-                    />
+                    <img className="w-60 md:w-96 rounded-2xl" src="/about1.png" alt="about page photo"/>
                 </div>
             </div>
         </div>

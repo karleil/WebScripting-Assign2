@@ -15,7 +15,7 @@ const BdayCounter = () => {
         const distance = targetDate - now; // gets the time difference between target date and the current time.
         (updateTimer, 1000); // this sets an interval to update the timer every second (1000ms).
   
-        // Calculate remaining days, hours, minutes, and seconds. I referred to this for the time calcs TwT(https://www.youtube.com/watch?v=ZVOGPvo08zM)
+        // Calculate remaining days, hours, minutes, and seconds. I referred to this for the time calcs TwT (https://www.youtube.com/watch?v=ZVOGPvo08zM)
         const days = Math.floor(distance / (1000 * 60 * 60 * 24)); // Converts milliseconds to days.
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); // Remaining hours.
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); // Remaining minutes.
