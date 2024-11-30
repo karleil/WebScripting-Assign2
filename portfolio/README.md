@@ -1,4 +1,5 @@
 Web Scripting Assignment 2
+GITHUB LINK: https://github.com/karleil/WebScripting-Assign2
 
 To run this poject, from WEBSCRIPTING-ASSIGN2, open terminal and run:
 
